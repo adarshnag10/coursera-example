@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Background</title>
+	<style>
+		#bg{
+			width: 500px;
+			height: 500px;
+			background-color: blue;
+			/*background-image: url("bart.png");
+			background-repeat: no-repeat;
+			background-position: bottom right;*/
+			/*all that can be written directly in background property and it will be almost same*/
+			background: url("bart.png") no-repeat right blue;/*this just overwrote all backgound properties and even the color that was earlier specified as blue to default color white. So if u need the color blue u need to specify it all over again in the background property*/
+		}
+	</style>
+</head>
+<body>
+	<h1>The Background Property</h1>
+	<div id="bg">background properties are fun!</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+</head>
+<body>
+	<form action="results.html" method="GET" enctype="multipart/form-data"><!--multipart/form-data specifies that the files attached to it could be very large so it is sending in mulitple parts-->
+		<div>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Username" required=""><!--value="" is used for some default value while placeholder="" is used for hidden text-->	
+		</div>
+		<br>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required="">
+		</div>
+		<br>
+		<div>
+			<label for="pwd">Password</label>
+			<input type="password" name="password" id="pwd" required="">	
+		</div>
+		<br>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" min="1" max="200" step="5"><!--step="" is used for increament with certain increase like more than 1-->
+		</div>
+		<br>
+		<div>
+			<label for="date">Birthdate</label>
+			<input type="date" name="date" id="date" min="2019-06-10">
+		</div>
+		<br>
+		<div>
+			Favourite Food:
+			<div>
+				<span>
+					<label for="banana">Banana</label>
+					<input type="checkbox" name="banana" id="banana">
+				</span>
+					
+				<span>
+					<label for="apple">Apple</label>
+					<input type="checkbox" name="banana" id="apple">
+				</span>
+				<span>
+					<label for="grapes">grapes</label>
+					<input type="checkbox" name="grapes" id="grapes">	
+				</span>
+				
+		</div>
+		<br>
+		<div>
+			Gender:
+			<span>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="male" value="male"><!--name will be used as radiobutton group attribute-->
+			</span>
+			<span>
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="female" value="female"><!--name will be used as radiobutton group attribute-->
+			</span>
+		</div>
+		<br>
+		<div>
+			<label for="Eyecolor">Eye Colour</label>
+			<select name="Eyecolor" id="Eyecolor"><!-the word multiple can be used for selecting multiple items in the combobox--->
+				<option value="green">Green</option>
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>					
+			</select>
+		</div>
+		<br>
+			<div>
+				<label for="address">Address</label>
+				<textarea id="address" name="address"></textarea>
+			</div>
+			<br>
+			<div>
+				<input type="hidden" name="hidden" value="hi"><!-- this will not appear on the screen but will be smbit in form as absolutely necessary condition-->
+			</div>
+			<br>
+			<div>
+				<label for="file">File</label>
+				<input type="file" name="file" id="file">
+			</div>
+			<br>
+			<div>
+				<label for="phone">Mobile Number</label>
+				<input type="tel" name="phone" id="phone"><!--in mobile phones special keboard for entering numbers of mobile number-->
+			</div>
+			<br>
+			<div>
+				<label for="url">URL</label>
+				<input type="url" name="url" id="url"><!--special keyboard in mobile that will be helpful for entering urls-->
+			</div>
+			<br>
+			<div>
+				<label for="color">Colour</label>
+				<input type="color" name="color" id="color">
+			</div>
+			<br>
+		<div>
+			<button type="Reset">Reset</button>
+			<button type="Submit">Submit</button>
+		</div>	
+	</form>
+</body>
+</html>

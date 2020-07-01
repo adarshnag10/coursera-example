@@ -1,0 +1,10 @@
+body{
+	background-color: grey;
+	font-size: 130%;
+}
+h2{
+	color: red;/*if u specify !important than it overrules any other rule for cascading*/
+}
+.para{
+	text-align: center;
+}
